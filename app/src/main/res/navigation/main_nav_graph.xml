@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/guardianDetailsFragment"
+        android:name="com.amsavarthan.security.ui.views.guardian.GuardianDetailsFragment"
+        android:label="fragment_guardian_details">
+
+        <action
+            android:id="@+id/action_guardianDetailsFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.amsavarthan.security.ui.views.main.MainFragment"
+        android:label="fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_studentDetailsFragment"
+            app:destination="@id/userDetailsFragment"
+            app:launchSingleTop="true" />
+        <argument
+            android:name="bypassFirstRunCheck"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_mainFragment_to_helplineNumberFragment"
+            app:destination="@id/helplineNumberFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.amsavarthan.security.ui.views.user.UserDetailsFragment"
+        android:label="fragment_student_details">
+        <action
+            android:id="@+id/action_userDetailsFragment_to_guardianDetailsFragment"
+            app:destination="@id/guardianDetailsFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/helplineNumberFragment"
+        android:name="com.amsavarthan.security.ui.views.helpline.HelplineNumberFragment"
+        android:label="HelplineNumberFragment" />
+</navigation>

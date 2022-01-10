@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">Alert\'em</string>
+    <string name="app_desc">Just few details to get started</string>
+
+    <string name="fragment_user_details_title">Your Details</string>
+    <string name="fragment_user_details_subtitle">Enter all the required details below</string>
+
+    <string name="fragment_main_title">User name</string>
+    <string name="fragment_main_subtitle">Long press the thumb to alert your emergency contacts</string>
+
+    <string name="fragment_guardian_details_title">Emergency Contacts</string>
+    <string name="fragment_guardian_details_subtitle">Choose your emergency contacts</string>
+
+    <string name="gsdc_chapter_name">Developed with ❤️ by GSDC CIT Chennai </string>
+
+    <!--  Message Templates  -->
+    <string name="sms_template" formatted="false">%s is in emergency. Please do contact %s immediately.</string>
+
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="department">Department</string>
+    <string name="year">Year</string>
+
+    <string name="add_contact">Add Contact</string>
+    <string name="remove_contact">Remove contact</string>
+    <string name="settings">Settings</string>
+    <string name="next_button">Next Button</string>
+    <string name="unknown_caller">Unknown Caller</string>
+    <string name="please_wait">Please wait, alerted recently.</string>
+    <string name="alerting_status">Alerting your emergency contacts…</string>
+    <string name="helpline_numbers">Helpline Numbers</string>
+    <string name="fragment_helpline_numbers_title">Helpline Numbers</string>
+    <string name="fragment_helpline_numbers_subtitle">Clicking on the number makes a call.</string>
+    <string name="back">Back</string>
+
+</resources>
